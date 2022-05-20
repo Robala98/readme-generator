@@ -33,5 +33,6 @@
   robala998@gmail.com
   
   ## Video
-  
-  ![link](/Users/robala/Documents/bootcamp/homework/readme-generator/readmegenerator.mov)
+  [readmegenerator.mp4.zip](https://github.com/Robala98/readme-generator/files/8743275/readmegenerator.mp4.zip)
+
+ 
