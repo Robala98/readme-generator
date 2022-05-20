@@ -1,74 +1,72 @@
+// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require("./utils/generateMarkdown")
+const generateMarkdown = require('./utils/generateMarkdown.js')
+// TODO: Create an array of questions for user input
+const questions = [
+  {
+    type: 'input',
+    message: 'Project Name: ',
+    name: "title"
+  },
+  {
+    type: 'input',
+    message: 'Description: ',
+    name: 'desc'
+  },
+  {
+    type: 'input',
+    message: 'Usage: ',
+    name: 'usage'
+  },
+  {
+    type: 'input',
+    message: 'Installation: ',
+    name: 'install'
+  },
+  {
+    type: 'input',
+    message: 'Contributions: ',
+    name: 'contribute'
+  },
+  {
+    type: 'input',
+    message: 'Tests: ',
+    name: 'test'
+  },
+  {
+    type: 'input',
+    message: 'License: ',
+    name: 'license'
+  },
+  {
+    type: 'input',
+    message: 'GitHub',
+    name: 'username'
+  },
+  {
+    type: 'input',
+    message: 'Email: ',
+    name: 'email'
+  }
+];
 
-function init(){
-inquirer.prompt([
-    
-    {
-      type: 'input',
-      message: 'What is the name of your project?',
-      name: 'title',
-    },
-    
-    {
-      type: 'input',
-      message: 'Give a brief description of your project:',
-      name: 'description',
-    },
-    
-    {
-      type: 'input',
-      message: 'Give directions on how to use your project:',
-      name: 'usage',
-    },
-    
-    {
-        type: 'input',
-        message: 'Instructions for installation?',
-        name: 'installation',
-      },
-      
-    {
-        type:'list',
-        message: 'What license if any will you be using?',
-        name:'license',
-        choices:[
-            'Apache',
-            'MIT',
-            'Mozilla',
-            'NONE'
-        ]
-      },
-      
-      {
-        type: 'input',
-        message: 'Any other contributers?',
-        name: 'contributions',
-      },
-      {
-        type: 'input',
-        message: 'Is there any testing implemented?',
-        name: 'test',
-      },
-      {
-        type: 'input',
-        message: 'What is your email?',
-        name: 'email',
-      },
-      {
-        type: 'input',
-        message: 'Enter your github username:',
-        name: 'github',
-      },
-      
-      
-  ])
-  .then((response) => {
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+  fs.writeFile('README.md, data')
 
-    fs.writeFileSync('README.md', generateMarkdown(response))
-    
-  })
 }
+
+// TODO: Create a function to initialize app
+function start() {
+
+  inquirer.prompt(questions)
+  
+  .then ((data) => writeToFile('README.md', generateMarkdown(data)))
+};
+
 // Function call to initialize app
-init();
+
+
+start();
+
