@@ -1,37 +1,32 @@
 # ReadME generator
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-## Table of Contents
- [Description](#description)
- [Installation](#installation)
- [Usage](#usage)
- [Contribution](#contribution)
- [license ](#license)
- [Test](#test)
- [Questions](#questions)
 
- ## Description
+  ## Description 
+  
+  This application creates a README that contains information about the project
+  
+  ## Usage
 
- This project creates a ReadME file to describe a project.
+  Clone down repo and run node index.js in the terminal
 
  ## Installation
 
- undefined 
+  No installation necessary, dependencies already installed
 
- ## Usage
+  ## Contributions
 
- Answer the questions to fill in the file.
+  None
 
- ## License 
+  ## Tests
 
- MIT
+  None
 
- license wedsite:(https://opensource.org/licenses/MIT)
+  ## License
 
- ## Contributions
+  MIT
 
- no
+  ## GitHub
 
- ## Test
+  Robala98
 
  no
 
