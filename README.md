@@ -13,7 +13,7 @@
 
  This project creates a ReadME file to describe a project.
 
- ## Instalation
+ ## Installation
 
  undefined 
 
@@ -39,7 +39,4 @@
 
  Here is a [link](https://www.github.com/Robala98) to my GitHub profile,
 for questions, email robala998@gmail.com 
-
-# Heres a working video of the application :p
-
 
